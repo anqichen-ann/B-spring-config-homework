@@ -7,8 +7,7 @@ import org.springframework.test.context.TestPropertySource;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(properties = {"spring.config.location=classpath:application-test.properties"})
-
+@TestPropertySource(properties = "levelNumber=2")
 public class DemoSpringConfigApplicationTests {
 	@Autowired
 	private LevelController levelController;
